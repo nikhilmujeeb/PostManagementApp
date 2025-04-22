@@ -4,11 +4,11 @@ import PostForm from './PostForm';
 
 function PostCard({ post, onEdit }) {
   const [editing, setEditing] = useState(false);
-  const isCustomPost = post.id > 100; // Only custom posts can be edited
+  const isCustomPost = post.id > 100; 
 
   const handleEditSubmit = (updatedPost) => {
     onEdit(updatedPost);
-    setEditing(false);  // Hide the form after submission
+    setEditing(false);
   };
 
   if (editing) {
